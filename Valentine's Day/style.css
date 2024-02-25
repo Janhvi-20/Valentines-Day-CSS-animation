@@ -1,0 +1,141 @@
+@font-face {
+    font-family: ove;
+    src: url(CassandraPersonalUseRegular-3BjG.ttf);
+}
+body {
+    background-color: #f2527a;
+    animation-name: backdrop;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate-reverse;
+    background-image: url('/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@keyframes backdrop {
+    0% {
+        background-color: #F2606C;
+    }
+    20% {
+        background-color: #F7ECD0;
+    }
+    40% {
+        background-color: #eba6b0;
+    }
+    60% {
+        background-color: #ea8e9b;
+    }
+    80% {
+        background-color: #efbfe3;
+    }
+    100% {
+        background-color: #f5d3ce;
+    }
+}
+.background {
+    margin: 0;
+    padding: 0;
+    width: 1500px;
+    height: 700px;
+}
+.container{
+    margin: 0;
+    padding: 0;
+    min-height: 45vh;
+    display: flex;
+    align-items: last baseline;
+    justify-content: center;
+}
+.heart {
+    height:100px;
+    width: 100px;
+    background-color: rgb(145, 0, 0);
+    position: relative;
+    transform: rotate(-45deg);
+    box-shadow: -20px 20px 100px rgb(145, 0, 0);
+    animation: pounding;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+
+}
+.heart:before {
+    content: '';
+    position:absolute ;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(145,0,0);
+    top: -50%;
+    border-radius: 70px;
+    box-shadow: -20px -20px 100px rgb(145, 0, 0);
+}
+.heart:after {
+    content: '';
+    position:absolute ;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(145, 0, 0);
+    right: -50%;
+    border-radius: 70px;
+    box-shadow: 20px 20px 100px rgb(145, 0, 0);
+}
+@keyframes pounding {
+    0%{
+        transform: rotate(-45deg) scale(1.05);
+    }
+    20% {
+        transform: rotate(-45deg) scale(1.0);
+    }
+    40% {
+        transform: rotate(-45deg) scale(0.8);
+    }
+    60% {
+        transform: rotate(-45deg) scale(1.0);
+    }
+    80% {
+        transform: rotate(-45deg) scale(1.05);
+    }
+    100% {
+        transform: rotate(-45deg) scale(1.0);
+    }
+    
+}
+.confession {
+    font-family: ove;
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin: 0px;
+    font-size: 68px;
+    animation: confess;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate-reverse;
+}
+@keyframes confess {
+    0% {
+        color: white;
+    }
+    20% {
+        color: #8290fb;
+    }
+    40% {
+        color: #050304;
+    }
+    60% {
+        color: #eeea98;
+    }
+    80% {
+        color: #fb0b0b;
+    }
+    100% {
+        color: #f08010;
+    }
+    
+}
+.container2 {
+    margin-top: 10px;
+}
